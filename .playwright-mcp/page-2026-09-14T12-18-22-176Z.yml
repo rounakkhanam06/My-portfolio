@@ -1,0 +1,616 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "R Raunak.dev" [ref=e6] [cursor=pointer]:
+        - /url: "#home"
+        - generic [ref=e7]: R
+        - generic [ref=e8]: Raunak.dev
+      - navigation [ref=e10]:
+        - link "Home" [ref=e11] [cursor=pointer]:
+          - /url: "#home"
+        - link "About" [ref=e13] [cursor=pointer]:
+          - /url: "#about"
+        - link "Skills" [ref=e14] [cursor=pointer]:
+          - /url: "#skills"
+        - link "Projects" [ref=e15] [cursor=pointer]:
+          - /url: "#projects"
+        - link "Experience" [ref=e16] [cursor=pointer]:
+          - /url: "#experience"
+        - link "Education" [ref=e17] [cursor=pointer]:
+          - /url: "#education"
+        - link "Contact" [ref=e18] [cursor=pointer]:
+          - /url: "#contact"
+      - generic [ref=e19]:
+        - link "Resume" [ref=e20] [cursor=pointer]:
+          - /url: /resume.pdf
+        - link "Hire Me" [ref=e25] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=e29]:
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]: AVAILABLE FOR ROLES & CONTRACTS
+        - heading "Hi, I'm Raunak Full-Stack MERN Developer" [level=1] [ref=e37]: Hi, I'm RaunakFull-Stack MERN Developer
+        - paragraph [ref=e38]: Building ultra-fast web architectures, resilient Node.js backends, scalable MongoDB databases, and captivating 3D interactive user interfaces.
+        - generic [ref=e39]:
+          - link "Explore Projects" [ref=e40] [cursor=pointer]:
+            - /url: "#projects"
+          - link "Let's Talk" [ref=e44] [cursor=pointer]:
+            - /url: "#contact"
+        - generic [ref=e49]:
+          - generic [ref=e50]: "CORE STACK:"
+          - generic [ref=e51]:
+            - generic [ref=e52]: ● MongoDB
+            - generic [ref=e53]: ● Express
+            - generic [ref=e54]: ● React
+            - generic [ref=e55]: ● Node.js
+            - generic [ref=e56]: ● Three.js
+        - generic [ref=e57]:
+          - link "GitHub Profile" [ref=e58] [cursor=pointer]:
+            - /url: https://github.com
+          - link "LinkedIn Profile" [ref=e62] [cursor=pointer]:
+            - /url: https://linkedin.com
+          - link "Email Contact" [ref=e67] [cursor=pointer]:
+            - /url: mailto:raunak@example.com
+      - generic [ref=e75]:
+        - generic [ref=e76]: raunak@mern:~$
+        - generic [ref=e81]:
+          - text: "const developer = {"
+          - generic [ref=e82]: "name: 'Raunak', stack: ['MongoDB', 'Express', 'React', 'Node'], passion: '3D Interactive Web & Distributed Systems', status: 'Ready to Build 🚀'};"
+    - generic [ref=e84]:
+      - generic [ref=e85]:
+        - generic [ref=e86]: WHO I AM
+        - heading "Engineering Web Solutions with Passion & Precision" [level=2] [ref=e92]
+        - paragraph [ref=e93]: I am a Full-Stack MERN Developer who loves transforming complex problems into elegant, maintainable, and high-performance digital architectures.
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - heading "Bridging the gap between design, performance & system architecture" [level=3] [ref=e96]
+          - paragraph [ref=e97]: My journey started with a deep fascination for how scalable distributed software functions behind sleek browser interfaces. Today, I specialize in the modern JavaScript ecosystem—crafting end-to-end architectures that perform effortlessly under heavy traffic.
+          - paragraph [ref=e98]: Whether it is orchestrating Dockerized Node.js microservices, fine-tuning MongoDB aggregation pipelines, or designing immersive WebGL 3D user experiences with Three.js, I treat every line of code as an opportunity to raise the benchmark of craftsmanship.
+          - generic [ref=e99]:
+            - generic [ref=e100]: Clean Architecture
+            - generic [ref=e105]: Scalable REST & GraphQL
+            - generic [ref=e110]: Reactive State Management
+            - generic [ref=e115]: Security & JWT Authentication
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - heading "Full-Stack Synergy" [level=4] [ref=e125]
+            - paragraph [ref=e126]: Seamlessly connecting intuitive React frontends with high-throughput Node/Express backends.
+          - generic [ref=e127]:
+            - heading "Data Architecture" [level=4] [ref=e133]
+            - paragraph [ref=e134]: Designing resilient MongoDB schemas, Redis caching layers, and performant aggregation pipelines.
+          - generic [ref=e135]:
+            - heading "3D & Immersive UX" [level=4] [ref=e139]
+            - paragraph [ref=e140]: Bringing web apps alive with Three.js WebGL rendering, micro-animations, and fluid responsive design.
+          - generic [ref=e141]:
+            - heading "Cloud & Microservices" [level=4] [ref=e146]
+            - paragraph [ref=e147]: Deploying production apps with Docker, CI/CD automated test pipelines, and cloud native services.
+      - generic [ref=e148]:
+        - generic [ref=e149]:
+          - generic [ref=e150]: 25+
+          - generic [ref=e151]: Completed Projects
+        - generic [ref=e152]:
+          - generic [ref=e153]: 500k+
+          - generic [ref=e154]: API Requests Handled/Day
+        - generic [ref=e155]:
+          - generic [ref=e156]: 99.9%
+          - generic [ref=e157]: System Uptime Goal
+        - generic [ref=e158]:
+          - generic [ref=e159]: 2+
+          - generic [ref=e160]: Years Experience
+    - generic [ref=e162]:
+      - generic [ref=e163]:
+        - generic [ref=e164]: TECHNICAL ARSENAL
+        - heading "Technologies & MERN Capabilities" [level=2] [ref=e169]
+        - paragraph [ref=e170]: A comprehensive suite of modern frameworks, runtimes, database technologies, and cloud tools I leverage to build mission-critical products.
+      - generic [ref=e171]:
+        - button "All Technologies" [ref=e172] [cursor=pointer]
+        - button "Frontend & 3D" [ref=e178] [cursor=pointer]
+        - button "Backend & APIs" [ref=e183] [cursor=pointer]
+        - button "Databases & Caching" [ref=e188] [cursor=pointer]
+        - button "Cloud & DevOps" [ref=e194] [cursor=pointer]
+      - generic [ref=e198]:
+        - generic [ref=e199]:
+          - generic [ref=e200]:
+            - heading "React.js" [level=4] [ref=e203]
+            - generic [ref=e204]: Core
+          - generic [ref=e206]:
+            - generic [ref=e207]: Proficiency
+            - generic [ref=e208]: 95%
+        - generic [ref=e211]:
+          - generic [ref=e212]:
+            - heading "Next.js" [level=4] [ref=e215]
+            - generic [ref=e216]: SSR/SSG
+          - generic [ref=e218]:
+            - generic [ref=e219]: Proficiency
+            - generic [ref=e220]: 88%
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - heading "JavaScript (ES6+)" [level=4] [ref=e227]
+            - generic [ref=e228]: Language
+          - generic [ref=e230]:
+            - generic [ref=e231]: Proficiency
+            - generic [ref=e232]: 95%
+        - generic [ref=e235]:
+          - generic [ref=e236]:
+            - heading "Three.js / 3D WebGL" [level=4] [ref=e239]
+            - generic [ref=e240]: 3D Graphics
+          - generic [ref=e242]:
+            - generic [ref=e243]: Proficiency
+            - generic [ref=e244]: 82%
+        - generic [ref=e247]:
+          - generic [ref=e248]:
+            - heading "Tailwind CSS" [level=4] [ref=e251]
+            - generic [ref=e252]: Styling
+          - generic [ref=e254]:
+            - generic [ref=e255]: Proficiency
+            - generic [ref=e256]: 92%
+        - generic [ref=e259]:
+          - generic [ref=e260]:
+            - heading "Redux Toolkit / Zustand" [level=4] [ref=e263]
+            - generic [ref=e264]: State
+          - generic [ref=e266]:
+            - generic [ref=e267]: Proficiency
+            - generic [ref=e268]: 90%
+        - generic [ref=e271]:
+          - generic [ref=e272]:
+            - heading "HTML5 & CSS3 / SCSS" [level=4] [ref=e275]
+            - generic [ref=e276]: Markup
+          - generic [ref=e278]:
+            - generic [ref=e279]: Proficiency
+            - generic [ref=e280]: 98%
+        - generic [ref=e283]:
+          - generic [ref=e284]:
+            - heading "Node.js" [level=4] [ref=e287]
+            - generic [ref=e288]: Runtime
+          - generic [ref=e290]:
+            - generic [ref=e291]: Proficiency
+            - generic [ref=e292]: 92%
+        - generic [ref=e295]:
+          - generic [ref=e296]:
+            - heading "Express.js" [level=4] [ref=e299]
+            - generic [ref=e300]: Framework
+          - generic [ref=e302]:
+            - generic [ref=e303]: Proficiency
+            - generic [ref=e304]: 94%
+        - generic [ref=e307]:
+          - generic [ref=e308]:
+            - heading "RESTful APIs" [level=4] [ref=e311]
+            - generic [ref=e312]: Architecture
+          - generic [ref=e314]:
+            - generic [ref=e315]: Proficiency
+            - generic [ref=e316]: 96%
+        - generic [ref=e319]:
+          - generic [ref=e320]:
+            - heading "GraphQL" [level=4] [ref=e323]
+            - generic [ref=e324]: API Query
+          - generic [ref=e326]:
+            - generic [ref=e327]: Proficiency
+            - generic [ref=e328]: 80%
+        - generic [ref=e331]:
+          - generic [ref=e332]:
+            - heading "Socket.io" [level=4] [ref=e335]
+            - generic [ref=e336]: Real-time
+          - generic [ref=e338]:
+            - generic [ref=e339]: Proficiency
+            - generic [ref=e340]: 85%
+        - generic [ref=e343]:
+          - generic [ref=e344]:
+            - heading "JWT & OAuth 2.0" [level=4] [ref=e347]
+            - generic [ref=e348]: Auth & Security
+          - generic [ref=e350]:
+            - generic [ref=e351]: Proficiency
+            - generic [ref=e352]: 90%
+        - generic [ref=e355]:
+          - generic [ref=e356]:
+            - heading "Microservices" [level=4] [ref=e359]
+            - generic [ref=e360]: System Design
+          - generic [ref=e362]:
+            - generic [ref=e363]: Proficiency
+            - generic [ref=e364]: 82%
+        - generic [ref=e367]:
+          - generic [ref=e368]:
+            - heading "MongoDB" [level=4] [ref=e371]
+            - generic [ref=e372]: NoSQL Core
+          - generic [ref=e374]:
+            - generic [ref=e375]: Proficiency
+            - generic [ref=e376]: 94%
+        - generic [ref=e379]:
+          - generic [ref=e380]:
+            - heading "Mongoose ODM" [level=4] [ref=e383]
+            - generic [ref=e384]: Data Modeling
+          - generic [ref=e386]:
+            - generic [ref=e387]: Proficiency
+            - generic [ref=e388]: 95%
+        - generic [ref=e391]:
+          - generic [ref=e392]:
+            - heading "Redis" [level=4] [ref=e395]
+            - generic [ref=e396]: Caching / PubSub
+          - generic [ref=e398]:
+            - generic [ref=e399]: Proficiency
+            - generic [ref=e400]: 84%
+        - generic [ref=e403]:
+          - generic [ref=e404]:
+            - heading "PostgreSQL" [level=4] [ref=e407]
+            - generic [ref=e408]: Relational DB
+          - generic [ref=e410]:
+            - generic [ref=e411]: Proficiency
+            - generic [ref=e412]: 80%
+        - generic [ref=e415]:
+          - generic [ref=e416]:
+            - heading "Firebase / Supabase" [level=4] [ref=e419]
+            - generic [ref=e420]: BaaS
+          - generic [ref=e422]:
+            - generic [ref=e423]: Proficiency
+            - generic [ref=e424]: 86%
+        - generic [ref=e427]:
+          - generic [ref=e428]:
+            - heading "Docker" [level=4] [ref=e431]
+            - generic [ref=e432]: Containers
+          - generic [ref=e434]:
+            - generic [ref=e435]: Proficiency
+            - generic [ref=e436]: 84%
+        - generic [ref=e439]:
+          - generic [ref=e440]:
+            - heading "AWS (S3, EC2, Lambda)" [level=4] [ref=e443]
+            - generic [ref=e444]: Cloud Infrastructure
+          - generic [ref=e446]:
+            - generic [ref=e447]: Proficiency
+            - generic [ref=e448]: 82%
+        - generic [ref=e451]:
+          - generic [ref=e452]:
+            - heading "Git & GitHub" [level=4] [ref=e455]
+            - generic [ref=e456]: Version Control
+          - generic [ref=e458]:
+            - generic [ref=e459]: Proficiency
+            - generic [ref=e460]: 95%
+        - generic [ref=e463]:
+          - generic [ref=e464]:
+            - heading "Postman" [level=4] [ref=e467]
+            - generic [ref=e468]: API Testing
+          - generic [ref=e470]:
+            - generic [ref=e471]: Proficiency
+            - generic [ref=e472]: 92%
+        - generic [ref=e475]:
+          - generic [ref=e476]:
+            - heading "CI/CD (GitHub Actions)" [level=4] [ref=e479]
+            - generic [ref=e480]: Automation
+          - generic [ref=e482]:
+            - generic [ref=e483]: Proficiency
+            - generic [ref=e484]: 80%
+        - generic [ref=e487]:
+          - generic [ref=e488]:
+            - heading "Vercel / Render / Netlify" [level=4] [ref=e491]
+            - generic [ref=e492]: Deployment
+          - generic [ref=e494]:
+            - generic [ref=e495]: Proficiency
+            - generic [ref=e496]: 94%
+    - generic [ref=e500]:
+      - generic [ref=e501]:
+        - generic [ref=e502]: PORTFOLIO SHOWCASE
+        - heading "Featured MERN Projects" [level=2] [ref=e509]
+        - paragraph [ref=e510]: A curated selection of production-ready applications, real-time collaboration engines, 3D WebGL experiments, and high-scale backend APIs.
+      - generic [ref=e511]:
+        - button "All" [ref=e512] [cursor=pointer]
+        - button "Full Stack" [ref=e513] [cursor=pointer]
+        - button "Backend / API" [ref=e514] [cursor=pointer]
+        - button "Frontend" [ref=e515] [cursor=pointer]
+      - generic [ref=e516]:
+        - generic [ref=e517]:
+          - generic [ref=e518]:
+            - img "DevNexus - Full-Stack Developer Collaboration Hub" [ref=e519]
+            - generic [ref=e520]: Full Stack
+            - generic [ref=e521]: FEATURED
+          - generic [ref=e525]:
+            - heading "DevNexus - Full-Stack Developer Collaboration Hub" [level=3] [ref=e526]
+            - paragraph [ref=e527]: An interactive workspace for developers featuring real-time code collaboration, project kanban boards, live chat via WebSockets, and AI code review integration.
+            - generic [ref=e528]:
+              - generic [ref=e529]: React.js
+              - generic [ref=e530]: Node.js
+              - generic [ref=e531]: Express.js
+              - generic [ref=e532]: MongoDB
+              - generic [ref=e533]: Socket.io
+              - generic [ref=e534]: Tailwind CSS
+            - generic [ref=e535]:
+              - button "View Architecture" [ref=e536] [cursor=pointer]
+              - generic [ref=e540]:
+                - link "GitHub Repository" [ref=e541] [cursor=pointer]:
+                  - /url: https://github.com
+                - link "Live Demo" [ref=e545] [cursor=pointer]:
+                  - /url: https://example.com
+        - generic [ref=e550]:
+          - generic [ref=e551]:
+            - img "OrbitStore - 3D Modern E-Commerce Platform" [ref=e552]
+            - generic [ref=e553]: Full Stack
+            - generic [ref=e554]: FEATURED
+          - generic [ref=e558]:
+            - heading "OrbitStore - 3D Modern E-Commerce Platform" [level=3] [ref=e559]
+            - paragraph [ref=e560]: High-performance headless e-commerce store with interactive 3D product visualizers, Stripe payment gateway, instant search, and automated inventory sync.
+            - generic [ref=e561]:
+              - generic [ref=e562]: React.js
+              - generic [ref=e563]: Three.js
+              - generic [ref=e564]: Node.js
+              - generic [ref=e565]: Express.js
+              - generic [ref=e566]: MongoDB
+              - generic [ref=e567]: Stripe API
+            - generic [ref=e568]:
+              - button "View Architecture" [ref=e569] [cursor=pointer]
+              - generic [ref=e573]:
+                - link "GitHub Repository" [ref=e574] [cursor=pointer]:
+                  - /url: https://github.com
+                - link "Live Demo" [ref=e578] [cursor=pointer]:
+                  - /url: https://example.com
+        - generic [ref=e583]:
+          - generic [ref=e584]:
+            - img "PulseFlow - Enterprise CRM & Lead Pipeline" [ref=e585]
+            - generic [ref=e586]: Backend / API
+            - generic [ref=e587]: FEATURED
+          - generic [ref=e591]:
+            - heading "PulseFlow - Enterprise CRM & Lead Pipeline" [level=3] [ref=e592]
+            - paragraph [ref=e593]: Scalable backend architecture handling millions of leads, webhook event ingestion, email automation workflows, and team attribution scoring.
+            - generic [ref=e594]:
+              - generic [ref=e595]: Node.js
+              - generic [ref=e596]: Express.js
+              - generic [ref=e597]: MongoDB
+              - generic [ref=e598]: Redis
+              - generic [ref=e599]: BullMQ
+              - generic [ref=e600]: Docker
+            - generic [ref=e601]:
+              - button "View Architecture" [ref=e602] [cursor=pointer]
+              - generic [ref=e606]:
+                - link "GitHub Repository" [ref=e607] [cursor=pointer]:
+                  - /url: https://github.com
+                - link "Live Demo" [ref=e611] [cursor=pointer]:
+                  - /url: https://example.com
+        - generic [ref=e616]:
+          - generic [ref=e617]:
+            - img "CryptoSphere - 3D Web3 Market Terminal" [ref=e618]
+            - generic [ref=e619]: Frontend
+          - generic [ref=e620]:
+            - heading "CryptoSphere - 3D Web3 Market Terminal" [level=3] [ref=e621]
+            - paragraph [ref=e622]: Futuristic crypto market intelligence dashboard featuring interactive 3D candlestick charts, live order books, and portfolio tracking.
+            - generic [ref=e623]:
+              - generic [ref=e624]: React.js
+              - generic [ref=e625]: Three.js
+              - generic [ref=e626]: Chart.js
+              - generic [ref=e627]: Tailwind CSS
+              - generic [ref=e628]: CoinGecko API
+            - generic [ref=e629]:
+              - button "View Architecture" [ref=e630] [cursor=pointer]
+              - generic [ref=e634]:
+                - link "GitHub Repository" [ref=e635] [cursor=pointer]:
+                  - /url: https://github.com
+                - link "Live Demo" [ref=e639] [cursor=pointer]:
+                  - /url: https://example.com
+        - generic [ref=e644]:
+          - generic [ref=e645]:
+            - img "TaskTitan - Agile Scrum & Kanban Suite" [ref=e646]
+            - generic [ref=e647]: Full Stack
+          - generic [ref=e648]:
+            - heading "TaskTitan - Agile Scrum & Kanban Suite" [level=3] [ref=e649]
+            - paragraph [ref=e650]: SaaS project management tool designed for fast-paced engineering teams with drag-and-drop boards, sprint planning, and automated burn-down reports.
+            - generic [ref=e651]:
+              - generic [ref=e652]: React.js
+              - generic [ref=e653]: Node.js
+              - generic [ref=e654]: Express.js
+              - generic [ref=e655]: MongoDB
+              - generic [ref=e656]: Framer Motion
+            - generic [ref=e657]:
+              - button "View Architecture" [ref=e658] [cursor=pointer]
+              - generic [ref=e662]:
+                - link "GitHub Repository" [ref=e663] [cursor=pointer]:
+                  - /url: https://github.com
+                - link "Live Demo" [ref=e667] [cursor=pointer]:
+                  - /url: https://example.com
+    - generic [ref=e673]:
+      - generic [ref=e674]:
+        - generic [ref=e675]: CAREER MILESTONES
+        - heading "Professional Experience" [level=2] [ref=e680]
+        - paragraph [ref=e681]: A timeline of building production software, architecting scalable services, and collaborating with cross-functional engineering teams.
+      - generic [ref=e684]:
+        - generic [ref=e687]:
+          - generic [ref=e688]:
+            - generic [ref=e689]:
+              - heading "Full-Stack MERN Developer" [level=3] [ref=e690]
+              - generic [ref=e691]: TechNova Solutions
+            - generic [ref=e692]:
+              - generic [ref=e693]: 2024 - Present
+              - generic [ref=e696]: Remote / Hybrid
+          - paragraph [ref=e700]: Architecting high-scale client web applications, microservices, and interactive web portals using the MERN stack.
+          - generic [ref=e701]:
+            - generic [ref=e702]: Designed and deployed 10+ scalable RESTful and GraphQL APIs handling over 500k+ daily transactions.
+            - generic [ref=e706]: Engineered responsive React frontends with modern state management, slashing page load times by 42%.
+            - generic [ref=e710]: Integrated Redis caching layers and optimized MongoDB query execution plans, cutting API latency by 35%.
+            - generic [ref=e714]: Mentored junior engineers on clean architectural patterns, code reviews, and unit testing best practices.
+          - generic [ref=e718]:
+            - generic [ref=e719]: React.js
+            - generic [ref=e720]: Node.js
+            - generic [ref=e721]: Express.js
+            - generic [ref=e722]: MongoDB
+            - generic [ref=e723]: Redis
+            - generic [ref=e724]: Docker
+            - generic [ref=e725]: AWS
+        - generic [ref=e728]:
+          - generic [ref=e729]:
+            - generic [ref=e730]:
+              - heading "MERN Stack Engineer Intern" [level=3] [ref=e731]
+              - generic [ref=e732]: Apex Digital Labs
+            - generic [ref=e733]:
+              - generic [ref=e734]: 2023 - 2024
+              - generic [ref=e737]: Bangalore, India
+          - paragraph [ref=e741]: Developed core modules for enterprise SaaS dashboards and customer engagement portals.
+          - generic [ref=e742]:
+            - generic [ref=e743]: Built custom interactive data visualizer components using React, D3.js, and Three.js canvas.
+            - generic [ref=e747]: Implemented secure user authentication with JWT, refresh token rotation, and bcrypt password hashing.
+            - generic [ref=e751]: Authored 50+ unit and integration test suites using Jest and Supertest, ensuring 90%+ code coverage.
+            - generic [ref=e755]: Collaborated in an Agile Scrum environment with bi-weekly sprints and daily standups.
+          - generic [ref=e759]:
+            - generic [ref=e760]: React.js
+            - generic [ref=e761]: Express.js
+            - generic [ref=e762]: Node.js
+            - generic [ref=e763]: MongoDB
+            - generic [ref=e764]: Postman
+            - generic [ref=e765]: Jest
+        - generic [ref=e768]:
+          - generic [ref=e769]:
+            - generic [ref=e770]:
+              - heading "Freelance Full-Stack Developer" [level=3] [ref=e771]
+              - generic [ref=e772]: Self-Employed
+            - generic [ref=e773]:
+              - generic [ref=e774]: 2022 - 2023
+              - generic [ref=e777]: Remote
+          - paragraph [ref=e781]: Delivered bespoke full-stack websites, landing pages, and web applications for global startups and clients.
+          - generic [ref=e782]:
+            - generic [ref=e783]: Built and launched custom e-commerce and booking platforms with integrated payment gateways (Stripe/Razorpay).
+            - generic [ref=e787]: Created 3D visual showcases and interactive animations using Three.js that increased client conversion rates by 28%.
+            - generic [ref=e791]: Maintained 100% on-time delivery across 12+ international projects with 5-star customer feedback.
+          - generic [ref=e795]:
+            - generic [ref=e796]: JavaScript
+            - generic [ref=e797]: React
+            - generic [ref=e798]: Node.js
+            - generic [ref=e799]: MongoDB
+            - generic [ref=e800]: Tailwind CSS
+            - generic [ref=e801]: Three.js
+    - generic [ref=e803]:
+      - generic [ref=e804]:
+        - generic [ref=e805]: BACKGROUND & CREDENTIALS
+        - heading "Education & Certifications" [level=2] [ref=e810]
+        - paragraph [ref=e811]: Strong foundation in Computer Science fundamentals combined with industry-certified expertise in full-stack architecture and cloud computing.
+      - generic [ref=e812]:
+        - generic [ref=e813]:
+          - heading "Academic Education" [level=3] [ref=e814]
+          - generic [ref=e819]:
+            - generic [ref=e820]:
+              - generic [ref=e821]:
+                - heading "Bachelor of Technology in Computer Science & Engineering" [level=4] [ref=e822]
+                - generic [ref=e823]: 2020 - 2024
+              - generic [ref=e826]: Apex University of Technology
+              - generic [ref=e827]: "Score: 8.8 CGPA (First Class with Distinction)"
+              - paragraph [ref=e828]: Specialized in Software Engineering, Data Structures & Algorithms, Database Systems, Computer Networks, and Cloud Computing.
+              - generic [ref=e829]:
+                - generic [ref=e830]: Winner, HackNova 36-hour National Hackathon for Web3 Innovation
+                - generic [ref=e835]: Lead Organizer, Campus Developer Student Club (GDSC Chapter)
+                - generic [ref=e840]: Published research paper on Distributed Microservices Architecture
+            - generic [ref=e845]:
+              - generic [ref=e846]:
+                - heading "Senior Secondary (Class XII - PCM)" [level=4] [ref=e847]
+                - generic [ref=e848]: 2018 - 2020
+              - generic [ref=e851]: Delhi Public School
+              - generic [ref=e852]: "Score: 92.4%"
+              - paragraph [ref=e853]: Majors in Physics, Chemistry, Mathematics, and Computer Science (C++ & Python).
+        - generic [ref=e854]:
+          - heading "Industry Certifications" [level=3] [ref=e855]
+          - generic [ref=e860]:
+            - generic [ref=e861]:
+              - generic [ref=e862]:
+                - generic [ref=e863]:
+                  - heading "Meta Certified Front-End Developer" [level=4] [ref=e864]
+                  - generic [ref=e865]: Meta / Coursera
+                - generic [ref=e866]: "2023"
+              - generic [ref=e867]:
+                - generic [ref=e868]: React
+                - generic [ref=e869]: JavaScript
+                - generic [ref=e870]: UI/UX Design
+                - generic [ref=e871]: Responsive Layouts
+            - generic [ref=e872]:
+              - generic [ref=e873]:
+                - generic [ref=e874]:
+                  - heading "Node.js & Microservices Architecture Masterclass" [level=4] [ref=e875]
+                  - generic [ref=e876]: Udemy
+                - generic [ref=e877]: "2023"
+              - generic [ref=e878]:
+                - generic [ref=e879]: Node.js
+                - generic [ref=e880]: Express
+                - generic [ref=e881]: Docker
+                - generic [ref=e882]: RabbitMQ
+                - generic [ref=e883]: Redis
+            - generic [ref=e884]:
+              - generic [ref=e885]:
+                - generic [ref=e886]:
+                  - heading "MongoDB Certified Developer Associate" [level=4] [ref=e887]
+                  - generic [ref=e888]: MongoDB University
+                - generic [ref=e889]: "2024"
+              - generic [ref=e890]:
+                - generic [ref=e891]: MongoDB
+                - generic [ref=e892]: Aggregation Pipelines
+                - generic [ref=e893]: Indexing
+                - generic [ref=e894]: Atlas
+            - generic [ref=e895]:
+              - generic [ref=e896]:
+                - generic [ref=e897]:
+                  - heading "AWS Certified Cloud Practitioner" [level=4] [ref=e898]
+                  - generic [ref=e899]: Amazon Web Services
+                - generic [ref=e900]: "2024"
+              - generic [ref=e901]:
+                - generic [ref=e902]: Cloud Concepts
+                - generic [ref=e903]: Security
+                - generic [ref=e904]: AWS S3 / EC2
+                - generic [ref=e905]: Serverless
+    - generic [ref=e907]:
+      - generic [ref=e908]:
+        - generic [ref=e909]: LET'S CONNECT
+        - heading "Have a Project in Mind? Get in Touch" [level=2] [ref=e913]
+        - paragraph [ref=e914]: Whether you want to discuss a full-stack engineering role, an architectural consultation, or freelance collaboration, my inbox is open.
+      - generic [ref=e915]:
+        - generic [ref=e917]:
+          - heading "Let's build something extraordinary together" [level=3] [ref=e918]
+          - paragraph [ref=e919]: I am currently open to full-time remote/hybrid roles, high-impact contract projects, and exciting tech startups looking to build robust MERN architectures.
+          - generic [ref=e920]:
+            - link "EMAIL DIRECT raunak@example.com" [ref=e921] [cursor=pointer]:
+              - /url: mailto:raunak@example.com
+              - generic [ref=e926]:
+                - generic [ref=e927]: EMAIL DIRECT
+                - generic [ref=e928]: raunak@example.com
+            - generic [ref=e934]:
+              - generic [ref=e935]: LOCATION
+              - generic [ref=e936]: India (Available Globally / Remote)
+            - generic [ref=e941]:
+              - generic [ref=e942]: AVAILABILITY
+              - generic [ref=e943]: Immediate / 2-week notice
+          - generic [ref=e944]:
+            - generic [ref=e945]: NETWORK PROFILES
+            - generic [ref=e946]:
+              - link "GitHub" [ref=e947] [cursor=pointer]:
+                - /url: https://github.com
+              - link "LinkedIn" [ref=e951] [cursor=pointer]:
+                - /url: https://linkedin.com
+        - generic [ref=e957]:
+          - generic [ref=e958]:
+            - generic [ref=e959]: Your Name
+            - textbox "e.g. John Doe" [ref=e960]
+          - generic [ref=e961]:
+            - generic [ref=e962]: Email Address
+            - textbox "john@example.com" [ref=e963]
+          - generic [ref=e964]:
+            - generic [ref=e965]: Subject
+            - textbox "Project Inquiry / Job Opportunity" [ref=e966]
+          - generic [ref=e967]:
+            - generic [ref=e968]: Message
+            - textbox "Tell me about your project, timeline, or requirements..." [ref=e969]
+          - button "Transmit Message" [ref=e970] [cursor=pointer]
+  - contentinfo [ref=e975]:
+    - generic [ref=e976]:
+      - generic [ref=e977]:
+        - generic [ref=e978]:
+          - generic [ref=e979]:
+            - generic [ref=e980]: R
+            - generic [ref=e981]: Raunak.dev
+          - paragraph [ref=e982]: Full-Stack MERN Developer • 3D Creative Technologist
+        - generic [ref=e983]:
+          - link "Home" [ref=e984] [cursor=pointer]:
+            - /url: "#home"
+          - link "About" [ref=e985] [cursor=pointer]:
+            - /url: "#about"
+          - link "Skills" [ref=e986] [cursor=pointer]:
+            - /url: "#skills"
+          - link "Projects" [ref=e987] [cursor=pointer]:
+            - /url: "#projects"
+          - link "Experience" [ref=e988] [cursor=pointer]:
+            - /url: "#experience"
+          - link "Education" [ref=e989] [cursor=pointer]:
+            - /url: "#education"
+          - link "Contact" [ref=e990] [cursor=pointer]:
+            - /url: "#contact"
+        - button "Back to top" [ref=e991] [cursor=pointer]
+      - generic [ref=e994]:
+        - generic [ref=e995]: © 2026 Raunak. All rights reserved.
+        - generic [ref=e996]: Engineered with React 18, Three.js & Modern MERN Principles

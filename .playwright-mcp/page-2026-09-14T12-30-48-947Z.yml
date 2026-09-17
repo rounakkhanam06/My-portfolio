@@ -1,0 +1,172 @@
+- generic [ref=f2e3]:
+  - generic [ref=f2e5]:
+    - generic [ref=f2e6]:
+      - link "+91 86524 10289" [ref=f2e7] [cursor=pointer]:
+        - /url: tel:+91 86524 10289
+      - link "info@vedhunt.in" [ref=f2e10] [cursor=pointer]:
+        - /url: mailto:info@vedhunt.in
+    - generic [ref=f2e14]: "Mon – Fri: 8:00am – 7:00pm"
+  - banner:
+    - generic [ref=f2e18]:
+      - link [ref=f2e20] [cursor=pointer]:
+        - /url: /
+        - img "Vedhunt Logo" [ref=f2e21]
+      - navigation [ref=f2e23]:
+        - link "Home" [ref=f2e25] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f2e29] [cursor=pointer]:
+          - /url: /about
+        - generic [ref=f2e31]:
+          - link "Services" [ref=f2e32] [cursor=pointer]:
+            - /url: /services
+          - generic:
+            - generic:
+              - link "Website Development High Performance & Stunning Layouts":
+                - /url: /services/website-development
+                - generic:
+                  - generic: Website Development
+                  - generic: High Performance & Stunning Layouts
+              - link "App Development Seamless iOS & Android Experiences":
+                - /url: /services/mobile-app-development
+                - generic:
+                  - generic: App Development
+                  - generic: Seamless iOS & Android Experiences
+              - link "Social Media Management Build an Unforgettable Social Presence":
+                - /url: /services/social-media-management
+                - generic:
+                  - generic: Social Media Management
+                  - generic: Build an Unforgettable Social Presence
+              - link "Performance Marketing Paid Ads, Brand Awareness & Content Strategy":
+                - /url: /services/performance-marketing
+                - generic:
+                  - generic: Performance Marketing
+                  - generic: Paid Ads, Brand Awareness & Content Strategy
+              - link "Accounting & Finance Streamlined Compliance & MIS Reporting":
+                - /url: /services/accounting-financial-services
+                - generic:
+                  - generic: Accounting & Finance
+                  - generic: Streamlined Compliance & MIS Reporting
+              - link "MIS & Reporting Services SQL, Power BI, Python integrations":
+                - /url: /services/mis-reporting-services
+                - generic:
+                  - generic: MIS & Reporting Services
+                  - generic: SQL, Power BI, Python integrations
+        - link "Portfolio" [ref=f2e35] [cursor=pointer]:
+          - /url: /portfolio
+        - link "Blog" [ref=f2e38] [cursor=pointer]:
+          - /url: /blog
+        - link "Pricing" [ref=f2e41] [cursor=pointer]:
+          - /url: /pricing
+        - link "Career" [ref=f2e44] [cursor=pointer]:
+          - /url: /career
+      - generic [ref=f2e46]:
+        - button "Toggle Theme" [ref=f2e47] [cursor=pointer]
+        - link "Get Quote" [ref=f2e59] [cursor=pointer]:
+          - /url: /get-quote
+  - main [ref=f2e63]
+  - contentinfo [ref=f2e67]:
+    - generic [ref=f2e69]:
+      - generic [ref=f2e70]:
+        - generic [ref=f2e71]:
+          - link [ref=f2e72] [cursor=pointer]:
+            - /url: /
+            - img "Vedhunt Logo" [ref=f2e73]
+          - paragraph [ref=f2e74]: Vedhunt Infotech is a full-service digital agency. We specialize in building responsive website development, strategic organic SEO, digital branding, accounting solutions, and automated dashboards to actively turn operations into revenue.
+        - generic [ref=f2e75]:
+          - heading "OUR SERVICES" [level=4] [ref=f2e77]
+          - list [ref=f2e79]:
+            - listitem [ref=f2e80]:
+              - link "Website Development" [ref=f2e83] [cursor=pointer]:
+                - /url: /services/website-development
+            - listitem [ref=f2e84]:
+              - link "App Development" [ref=f2e87] [cursor=pointer]:
+                - /url: /services/mobile-app-development
+            - listitem [ref=f2e88]:
+              - link "Social Media Management" [ref=f2e91] [cursor=pointer]:
+                - /url: /services/social-media-management
+            - listitem [ref=f2e92]:
+              - link "Performance Marketing" [ref=f2e95] [cursor=pointer]:
+                - /url: /services/performance-marketing
+            - listitem [ref=f2e96]:
+              - link "Accounting & Finance" [ref=f2e99] [cursor=pointer]:
+                - /url: /services/accounting-financial-services
+            - listitem [ref=f2e100]:
+              - link "MIS & Reporting Services" [ref=f2e103] [cursor=pointer]:
+                - /url: /services/mis-reporting-services
+        - generic [ref=f2e104]:
+          - heading "COMPANY" [level=4] [ref=f2e106]
+          - list [ref=f2e108]:
+            - listitem [ref=f2e109]:
+              - link "About Us" [ref=f2e112] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f2e113]:
+              - link "Our Portfolio" [ref=f2e116] [cursor=pointer]:
+                - /url: /portfolio
+            - listitem [ref=f2e117]:
+              - link "Expert Solutions" [ref=f2e120] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=f2e121]:
+              - link "Career Vacancies" [ref=f2e124] [cursor=pointer]:
+                - /url: /career
+            - listitem [ref=f2e125]:
+              - link "FAQ's" [ref=f2e128] [cursor=pointer]:
+                - /url: /faq
+            - listitem [ref=f2e129]:
+              - link "Contact Support" [ref=f2e132] [cursor=pointer]:
+                - /url: /get-quote
+            - listitem [ref=f2e133]:
+              - link "Sitemap" [ref=f2e136] [cursor=pointer]:
+                - /url: /sitemap
+        - generic [ref=f2e137]:
+          - heading "LEGAL & COMPLIANCE" [level=4] [ref=f2e139]
+          - list [ref=f2e141]:
+            - listitem [ref=f2e142]:
+              - link "Privacy Policy" [ref=f2e145] [cursor=pointer]:
+                - /url: /privacy-policy
+            - listitem [ref=f2e146]:
+              - link "Terms & Conditions" [ref=f2e149] [cursor=pointer]:
+                - /url: /terms-and-conditions
+            - listitem [ref=f2e150]:
+              - link "Cookie Policy" [ref=f2e153] [cursor=pointer]:
+                - /url: /cookie-policy
+            - listitem [ref=f2e154]:
+              - link "Data Processing Agreement (DPA)" [ref=f2e157] [cursor=pointer]:
+                - /url: /data-processing-agreement
+            - listitem [ref=f2e158]:
+              - link "Refund & Billing Policy" [ref=f2e161] [cursor=pointer]:
+                - /url: /refund-and-billing-policy
+        - generic [ref=f2e162]:
+          - heading "CONTACT INFO" [level=4] [ref=f2e164]
+          - generic [ref=f2e166]:
+            - link "+91 86524 10289" [ref=f2e167] [cursor=pointer]:
+              - /url: tel:+91 86524 10289
+            - link "info@vedhunt.in" [ref=f2e172] [cursor=pointer]:
+              - /url: mailto:info@vedhunt.in
+            - generic [ref=f2e178]: Navi Mumbai, Maharashtra, India
+          - link "Get in Touch" [ref=f2e185] [cursor=pointer]:
+            - /url: /get-quote
+      - generic [ref=f2e190]:
+        - generic [ref=f2e191]:
+          - generic [ref=f2e192]:
+            - heading "Subscribe to Our Newsletter" [level=5] [ref=f2e193]
+            - paragraph [ref=f2e194]: Stay updated on technological trends, SEO tips, and enterprise solutions.
+          - generic [ref=f2e196]:
+            - textbox "Enter email address" [ref=f2e197]
+            - button "Submit" [ref=f2e198] [cursor=pointer]
+        - generic [ref=f2e199]:
+          - heading "Our Office" [level=5] [ref=f2e200]
+          - generic [ref=f2e201]: Office No, 7th Floor, Everest Nivara Infotech Park, A-702, Indira Nagar, MIDC Industrial Area, Turbhe, Navi Mumbai, Maharashtra 400705
+      - generic [ref=f2e207]:
+        - generic [ref=f2e208]:
+          - paragraph [ref=f2e209]: © 2026 Vedhunt InfoTech. All Rights Reserved.
+          - paragraph [ref=f2e210]: "Company Registration: CIN - U62099MH2025PTC447275"
+        - generic [ref=f2e211]:
+          - generic [ref=f2e212]:
+            - link "Privacy Policy" [ref=f2e213] [cursor=pointer]:
+              - /url: /privacy-policy
+            - generic [ref=f2e214]: •
+            - link "Terms of Service" [ref=f2e215] [cursor=pointer]:
+              - /url: /terms-and-conditions
+          - button "Scroll to top" [ref=f2e216] [cursor=pointer]
+  - link "Chat with us on WhatsApp" [ref=f2e220] [cursor=pointer]:
+    - /url: https://wa.me/917049380550?text=Hi%20Vedhunt%20InfoTech!%20I%20want%20to%20know%20more%20about%20your%20services.
