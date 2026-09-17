@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Send, MapPin, Phone, MessageSquare, CheckCircle, Sparkles, Github, Linkedin } from 'lucide-react';
+import { Mail, Send, MapPin, MessageSquare, CheckCircle, CheckCircle2, AlertCircle, Sparkles, Github, Linkedin, X } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 export default function Contact() {
@@ -12,12 +12,95 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
+  // Floating Toast Notification State
+  const [toast, setToast] = useState({ show: false, type: 'info', message: '' });
+
+  const showToast = (type, message) => {
+    setToast({ show: true, type, message });
+    setTimeout(() => {
+      setToast((prev) => ({ ...prev, show: false }));
+    }, 4500);
+  };
+
   const handleChange = (e) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const validateForm = () => {
+    const nameTrimmed = formData.name.trim();
+    const emailTrimmed = formData.email.trim();
+    const subjectTrimmed = formData.subject.trim();
+    const messageTrimmed = formData.message.trim();
+
+    // Name Validation
+    if (!nameTrimmed) {
+      showToast('error', 'Please enter your name.');
+      return false;
+    }
+    if (nameTrimmed.length < 2) {
+      showToast('error', 'Name must be at least 2 characters long.');
+      return false;
+    }
+    if (nameTrimmed.length > 50) {
+      showToast('error', 'Name cannot exceed 50 characters.');
+      return false;
+    }
+    const nameRegex = /^[a-zA-Z\s\.\-']+$/;
+    if (!nameRegex.test(nameTrimmed)) {
+      showToast('error', 'Name should only contain letters and spaces.');
+      return false;
+    }
+
+    // Email Validation
+    if (!emailTrimmed) {
+      showToast('error', 'Please enter your email address.');
+      return false;
+    }
+    if (emailTrimmed.length > 80) {
+      showToast('error', 'Email address is too long (max 80 characters).');
+      return false;
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(emailTrimmed)) {
+      showToast('error', 'Please enter a valid email address (e.g. name@domain.com).');
+      return false;
+    }
+
+    // Subject Validation
+    if (!subjectTrimmed) {
+      showToast('error', 'Please enter a subject.');
+      return false;
+    }
+    if (subjectTrimmed.length < 3) {
+      showToast('error', 'Subject must be at least 3 characters.');
+      return false;
+    }
+
+    // Message Validation
+    if (!messageTrimmed) {
+      showToast('error', 'Please enter your message.');
+      return false;
+    }
+    if (messageTrimmed.length < 10) {
+      showToast('error', 'Message must be at least 10 characters long.');
+      return false;
+    }
+    if (messageTrimmed.length > 1000) {
+      showToast('error', 'Message cannot exceed 1000 characters.');
+      return false;
+    }
+
+    return true;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -28,21 +111,21 @@ export default function Contact() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "a2c4bf7b-fd16-442b-997e-007f0a3f6604", 
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
+          access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "a2c4bf7b-fd16-442b-997e-007f0a3f6604",
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          subject: formData.subject.trim(),
+          message: formData.message.trim(),
         }),
       });
 
       const result = await response.json();
-      
+
       if (result.success) {
         setIsSubmitting(false);
         setSubmitted(true);
+        showToast('success', 'Message sent successfully!');
 
-        // Trigger 3D Confetti Effect
         try {
           confetti({
             particleCount: 100,
@@ -54,23 +137,78 @@ export default function Contact() {
           console.log(err);
         }
 
-        // Reset form
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
         setIsSubmitting(false);
-        alert("Failed to send message. Please make sure you added your Web3Forms access key in the code.");
+        showToast('error', result.message || 'Failed to send message. Please try again.');
       }
     } catch (error) {
       console.error("Form submission error:", error);
       setIsSubmitting(false);
-      alert("Something went wrong. Please try again later.");
+      showToast('error', 'Network error. Please check your internet connection.');
     }
   };
 
   return (
     <section id="contact" className="section" style={{ position: 'relative' }}>
+
+      {/* Floating Toast Notification */}
+      {toast.show && (
+        <div
+          style={{
+            position: 'fixed',
+            top: '1.5rem',
+            right: '1.5rem',
+            zIndex: 9999,
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.75rem',
+            padding: '0.85rem 1.25rem',
+            borderRadius: 'var(--radius-md)',
+            background: 'rgba(15, 19, 31, 0.95)',
+            backdropFilter: 'blur(16px)',
+            border: `1px solid ${
+              toast.type === 'success'
+                ? 'var(--neon-cyan)'
+                : 'var(--neon-pink)'
+            }`,
+            boxShadow: `0 10px 30px rgba(0,0,0,0.5), 0 0 20px ${
+              toast.type === 'success'
+                ? 'rgba(0, 245, 212, 0.3)'
+                : 'rgba(247, 37, 133, 0.3)'
+            }`,
+            color: 'var(--text-main)',
+            fontSize: '0.9rem',
+            fontFamily: 'var(--font-heading)',
+            maxWidth: '380px',
+            animation: 'fadeIn 0.3s ease'
+          }}
+        >
+          {toast.type === 'success' ? (
+            <CheckCircle2 size={20} color="var(--neon-cyan)" style={{ flexShrink: 0 }} />
+          ) : (
+            <AlertCircle size={20} color="var(--neon-pink)" style={{ flexShrink: 0 }} />
+          )}
+          <span style={{ flexGrow: 1, lineHeight: 1.4 }}>{toast.message}</span>
+          <button
+            onClick={() => setToast((prev) => ({ ...prev, show: false }))}
+            style={{
+              background: 'transparent',
+              border: 'none',
+              color: 'var(--text-dim)',
+              cursor: 'pointer',
+              padding: 0,
+              display: 'flex',
+              alignItems: 'center'
+            }}
+          >
+            <X size={16} />
+          </button>
+        </div>
+      )}
+
       <div className="container">
-        
+
         {/* Header */}
         <div className="section-header">
           <div className="section-badge">
@@ -86,7 +224,7 @@ export default function Contact() {
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3rem' }}>
-          
+
           {/* Contact Details & Socials */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
             <div className="glass-panel" style={{ padding: '2.5rem' }}>
@@ -195,17 +333,25 @@ export default function Contact() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+
+                {/* Name Input */}
                 <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.4rem', color: 'var(--text-main)' }}>
-                    Your Name
-                  </label>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
+                    <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-main)' }}>
+                      Your Name
+                    </label>
+                    <span style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-dim)' }}>
+                      {formData.name.length}/50
+                    </span>
+                  </div>
                   <input
                     type="text"
                     name="name"
+                    maxLength={50}
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="e.g. John Doe"
+                    placeholder="e.g. Raunak Khanam"
                     style={{
                       width: '100%',
                       padding: '0.85rem 1.1rem',
@@ -222,17 +368,24 @@ export default function Contact() {
                   />
                 </div>
 
+                {/* Email Input */}
                 <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.4rem', color: 'var(--text-main)' }}>
-                    Email Address
-                  </label>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
+                    <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-main)' }}>
+                      Email Address
+                    </label>
+                    <span style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-dim)' }}>
+                      {formData.email.length}/80
+                    </span>
+                  </div>
                   <input
                     type="email"
                     name="email"
+                    maxLength={80}
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="john@example.com"
+                    placeholder="raunak@example.com"
                     style={{
                       width: '100%',
                       padding: '0.85rem 1.1rem',
@@ -249,13 +402,20 @@ export default function Contact() {
                   />
                 </div>
 
+                {/* Subject Input */}
                 <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.4rem', color: 'var(--text-main)' }}>
-                    Subject
-                  </label>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
+                    <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-main)' }}>
+                      Subject
+                    </label>
+                    <span style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-dim)' }}>
+                      {formData.subject.length}/100
+                    </span>
+                  </div>
                   <input
                     type="text"
                     name="subject"
+                    maxLength={100}
                     required
                     value={formData.subject}
                     onChange={handleChange}
@@ -276,13 +436,20 @@ export default function Contact() {
                   />
                 </div>
 
+                {/* Message Input */}
                 <div>
-                  <label style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.4rem', color: 'var(--text-main)' }}>
-                    Message
-                  </label>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
+                    <label style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-main)' }}>
+                      Message
+                    </label>
+                    <span style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-dim)' }}>
+                      {formData.message.length}/1000
+                    </span>
+                  </div>
                   <textarea
                     name="message"
                     rows="5"
+                    maxLength={1000}
                     required
                     value={formData.message}
                     onChange={handleChange}
