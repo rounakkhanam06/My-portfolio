@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
@@ -8,20 +8,34 @@ import Experience from './components/Experience/Experience';
 import Education from './components/Education/Education';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
-import Background3D from './components/ThreeCanvas/Background3D';
+import ParticleField from './components/ParticleField/ParticleField';
 
 export default function App() {
+  // Subtle fade-up for elements marked with .reveal
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="portfolio-root" style={{ position: 'relative', minHeight: '100vh' }}>
-      {/* 3D Dynamic Interactive Particle & Geometry Background */}
-      <Background3D />
-
-      {/* Fixed Glassmorphic Navigation Bar */}
+    <>
+      <ParticleField />
       <Navbar />
-
-      {/* Main Sections */}
       <main>
         <Hero />
+        {/* Breathing room where the particle field spells the name */}
+        <div className="name-stage" aria-hidden="true" />
         <About />
         <Skills />
         <Projects />
@@ -29,9 +43,7 @@ export default function App() {
         <Education />
         <Contact />
       </main>
-
-      {/* Footer */}
       <Footer />
-    </div>
+    </>
   );
 }
